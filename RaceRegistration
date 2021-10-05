@@ -1,0 +1,18 @@
+//Small program practing flow control
+let raceNumber = Math.floor(Math.random() * 1000);
+let registeredEarly = false;
+let age = 12;
+
+if (age > 18 && registeredEarly == true){
+  raceNumber += 1000;
+}
+
+if ( age > 18 && registeredEarly == true){
+  console.log('Your Race will start at 9:30am \nYour Race number is :' + ` ${raceNumber}`);
+} else if ( age > 18 && registeredEarly == false){
+  console.log('Late adults run at 11:00 am \nYour Race number is :' + ` ${raceNumber}`);
+}else if (age < 18){
+  console.log('Youth registrants run at 12:30 pm (regardless of registration \nYour Race number is :' + ` ${raceNumber}`);
+}else{
+  console.log('see the registration desk');
+}
